@@ -1,0 +1,63 @@
+// ---------------------------------------------------------------------------
+// IMPORTS
+
+@import "compass";
+// @import "compass/reset";
+@import "susy";
+
+// ---------------------------------------------------------------------------
+// Setup
+
+$total-columns  : 6;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : 1em;
+
+$legacy-support-for-ie6     : true;
+$legacy-support-for-ie7     : true;
+
+$relative-font-sizing       : true;
+$base-font-size             : 16px;
+
+$large          : 10;
+
+// ---------------------------------------------------------------------------
+// Root
+
+@include establish-baseline;
+
+label { font-weight: bold; }
+
+// ---------------------------------------------------------------------------
+// Layout
+
+body {
+  @include container($total-columns, $large);
+  @include padding-leader(2);
+  * { @include box-sizing(border-box); }
+}
+
+@include at-breakpoint($large) {
+  .intro, form { @include span-columns(5); }
+  form {
+    @include omega;
+  }
+}
+
+footer { clear: both; }
+
+// ---------------------------------------------------------------------------
+// Modules
+
+.intro, form {
+  @include trailer(2);
+}
+
+form {
+  @include rhythm-borders(1px,.5);
+  border-color: #ccc;
+}
+
+.note {
+  font-style: italic;
+}
