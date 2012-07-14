@@ -47,7 +47,12 @@ body {
 footer { clear: both; }
 
 // ---------------------------------------------------------------------------
-// Modules
+// Signup
+
+.signup {
+  @include trailer;
+  overflow: hidden;
+}
 
 .intro, form {
   @include trailer(2);
@@ -61,3 +66,28 @@ form {
 footer, .note {
   font-style: italic;
 }
+
+// ---------------------------------------------------------------------------
+// Team
+
+.team {
+  @include leading-border(1px,.5);
+  @include trailer(2);
+  overflow: hidden;
+}
+
+.vcard {
+  @include clearfix;
+  img {
+    border: 1px solid;
+    float: left;
+    margin-right: 1em;
+  }
+  &:nth-child(odd) img {
+    float: right;
+    margin-right: 0;
+    margin-left: 1em;
+  }
+}
+
+

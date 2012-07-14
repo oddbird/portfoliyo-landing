@@ -57,6 +57,11 @@ footer {
   clear: both;
 }
 
+.signup {
+  margin-bottom: 1.5em;
+  overflow: hidden;
+}
+
 .intro, form {
   margin-bottom: 3em;
 }
@@ -70,4 +75,27 @@ form {
 
 footer, .note {
   font-style: italic;
+}
+
+.team {
+  border-top-style: solid;
+  border-top-width: 0.063em;
+  padding-top: 0.688em;
+  margin-bottom: 3em;
+  overflow: hidden;
+}
+
+.vcard {
+  overflow: hidden;
+  *zoom: 1;
+}
+.vcard img {
+  border: 1px solid;
+  float: left;
+  margin-right: 1em;
+}
+.vcard:nth-child(odd) img {
+  float: right;
+  margin-right: 0;
+  margin-left: 1em;
 }
