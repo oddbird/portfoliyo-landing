@@ -1,37 +1,176 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      FontSite Inc.
+ * License URL: http://www.fontspring.com/fflicense/fontsite
+ *
+ *
+ */
+@font-face {
+  font-family: "FranklinGothicFS";
+  src: url('../fonts/FranklinGothic-Book-webfont.eot');
+  src: url('../fonts/FranklinGothic-Book-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-Book-webfont.woff') format('woff'), url('../fonts/FranklinGothic-Book-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-Book-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FranklinGothicFS";
+  src: url('../fonts/FranklinGothic-BookIt-webfont.eot');
+  src: url('../fonts/FranklinGothic-BookIt-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-BookIt-webfont.woff') format('woff'), url('../fonts/FranklinGothic-BookIt-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-BookIt-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "FranklinGothicFS";
+  src: url('../fonts/FranklinGothic-Med-webfont.eot');
+  src: url('../fonts/FranklinGothic-Med-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-Med-webfont.woff') format('woff'), url('../fonts/FranklinGothic-Med-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-Med-webfont.svg#webfont') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FranklinGothicFS";
+  src: url('../fonts/FranklinGothic-MedIt-webfont.eot');
+  src: url('../fonts/FranklinGothic-MedIt-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-MedIt-webfont.woff') format('woff'), url('../fonts/FranklinGothic-MedIt-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-MedIt-webfont.svg#webfont') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "FranklinGothicFSCd";
+  src: url('../fonts/FranklinGothic-Cd-webfont.eot');
+  src: url('../fonts/FranklinGothic-Cd-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-Cd-webfont.woff') format('woff'), url('../fonts/FranklinGothic-Cd-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-Cd-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FranklinGothicFSCd";
+  src: url('../fonts/FranklinGothic-CdIt-webfont.eot');
+  src: url('../fonts/FranklinGothic-CdIt-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-CdIt-webfont.woff') format('woff'), url('../fonts/FranklinGothic-CdIt-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-CdIt-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "FranklinGothicFSCd";
+  src: url('../fonts/FranklinGothic-MedCd-webfont.eot');
+  src: url('../fonts/FranklinGothic-MedCd-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-MedCd-webfont.woff') format('woff'), url('../fonts/FranklinGothic-MedCd-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-MedCd-webfont.svg#webfont') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FranklinGothicFSCd";
+  src: url('../fonts/FranklinGothic-MedCdIt-webfont.eot');
+  src: url('../fonts/FranklinGothic-MedCdIt-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-MedCdIt-webfont.woff') format('woff'), url('../fonts/FranklinGothic-MedCdIt-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-MedCdIt-webfont.svg#webfont') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SquareSerif";
+  src: url('../fonts/SquareSerif-Book-webfont.eot');
+  src: url('../fonts/SquareSerif-Book-webfont.eot?#iefix') format('eot'), url('../fonts/SquareSerif-Book-webfont.woff') format('woff'), url('../fonts/SquareSerif-Book-webfont.ttf') format('truetype'), url('../fonts/SquareSerif-Book-webfont.svg#SquareSerifBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SquareSerif";
+  src: url('../fonts/SquareSerif-Bold-webfont.eot');
+  src: url('../fonts/SquareSerif-Bold-webfont.eot?#iefix') format('eot'), url('../fonts/SquareSerif-Bold-webfont.woff') format('woff'), url('../fonts/SquareSerif-Bold-webfont.ttf') format('truetype'), url('../fonts/SquareSerif-Bold-webfont.svg#SquareSerifBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
 * html {
   font-size: 100%;
 }
 
 html {
   font-size: 16px;
-  line-height: 1.5em;
-}
-
-label {
-  font-weight: bold;
+  line-height: 1.25em;
 }
 
 body {
-  *zoom: 1;
-  max-width: 29em;
-  _width: 29em;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 3em;
+  font-family: "FranklinGothicFS", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  padding-top: 2.5em;
   background: url('../images/chalkboard.jpg?1342472802') repeat fixed center;
-}
-body:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media (min-width: 51em) {
-  body {
-    max-width: 49em;
-    _width: 49em;
-  }
 }
 @media (min-width: 51em) {
   body {
@@ -46,74 +185,42 @@ body:after {
     background-size: cover;
   }
 }
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "SquareSerif", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  margin-bottom: 1.25em;
+  font-weight: bold;
+}
+body p, body ul, body ol {
+  margin-bottom: 1.25em;
+}
+
+body {
+  *zoom: 1;
+  max-width: 29em;
+  _width: 29em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 51em) {
+  body {
+    max-width: 49em;
+    _width: 49em;
+  }
+}
 body * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-@media (min-width: 51em) {
-  .intro, form {
-    width: 48.98%;
-    float: left;
-    margin-right: 2.041%;
-    display: inline;
-  }
-
-  form {
-    float: right;
-    margin-right: 0;
-    #margin-left: -1em;
-    display: inline;
-  }
-}
 footer {
   clear: both;
-}
-
-.signup {
-  margin-bottom: 1.5em;
-  overflow: hidden;
-}
-
-.intro, form {
-  margin-bottom: 3em;
-}
-
-form {
-  border-style: solid;
-  border-width: 0.063em;
-  padding: 0.688em;
-  border-color: #ccc;
-}
-
-footer, .note {
-  font-style: italic;
-}
-
-.team {
-  border-top-style: solid;
-  border-top-width: 0.063em;
-  padding-top: 0.688em;
-  margin-bottom: 3em;
-  overflow: hidden;
-}
-
-.vcard {
-  overflow: hidden;
-  *zoom: 1;
-}
-.vcard img {
-  width: 31.034%;
-  float: left;
-  margin-right: 3.448%;
-  display: inline;
-  border: 1px solid;
-}
-.vcard:nth-child(odd) img {
-  float: right;
-  margin-right: 0;
-  #margin-left: -1em;
-  display: inline;
-  margin-left: 3.448%;
 }

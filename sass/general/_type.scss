@@ -1,0 +1,13 @@
+// ---------------------------------------------------------------------------
+// Typography
+
+%type {
+  h1, h2, h3, h4, h5, h6 {
+    @include serif;
+    @include trailer;
+    font-weight: bold;
+  }
+  p, ul, ol {
+    @include trailer;
+  }
+}

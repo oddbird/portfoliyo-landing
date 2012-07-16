@@ -2,97 +2,13 @@
 // IMPORTS
 
 @import "compass";
-// @import "compass/reset";
+@import "compass/reset";
 @import "susy";
 
-// ---------------------------------------------------------------------------
-// Setup
-
-$total-columns  : 6;
-$column-width   : 4em;
-$gutter-width   : 1em;
-$grid-padding   : 1em;
-
-$legacy-support-for-ie6     : true;
-$legacy-support-for-ie7     : true;
-
-$relative-font-sizing       : true;
-$base-font-size             : 16px;
-
-$large          : 10;
-
-// ---------------------------------------------------------------------------
-// Root
-
-@include establish-baseline;
-
-label { font-weight: bold; }
-
-// ---------------------------------------------------------------------------
-// Layout
+@import "base/base";
+@import "general/root";
+@import "layout/layout";
 
 body {
-  @include container($total-columns, $large);
-  @include padding-leader(2);
-  background: image-url('chalkboard.jpg') repeat fixed center;
-  @include at-breakpoint($large) {
-    @include background(image-url('classroom.jpg') no-repeat fixed top left);
-  }
-  @media (min-width: image-width('classroom.jpg')), (min-height: image-height('classroom.jpg')) {
-    @include background-size(cover);
-  }
-  * { @include box-sizing(border-box); }
+  @extend %type;
 }
-
-@include at-breakpoint($large) {
-  .intro, form { @include span-columns(5); }
-  form {
-    @include omega;
-  }
-}
-
-footer { clear: both; }
-
-// ---------------------------------------------------------------------------
-// Signup
-
-.signup {
-  @include trailer;
-  overflow: hidden;
-}
-
-.intro, form {
-  @include trailer(2);
-}
-
-form {
-  @include rhythm-borders(1px,.5);
-  border-color: #ccc;
-}
-
-footer, .note {
-  font-style: italic;
-}
-
-// ---------------------------------------------------------------------------
-// Team
-
-.team {
-  @include leading-border(1px,.5);
-  @include trailer(2);
-  overflow: hidden;
-}
-
-.vcard {
-  @include clearfix;
-  img {
-    @include span-columns(2);
-    border: 1px solid;
-  }
-  &:nth-child(odd) img {
-    @include omega;
-    margin-left: gutter();
-  }
-}
-
-
