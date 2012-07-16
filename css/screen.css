@@ -159,20 +159,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 * html {
-  font-size: 100%;
+  font-size: 131.25%;
 }
 
 html {
-  font-size: 16px;
-  line-height: 1.25em;
+  font-size: 21px;
+  line-height: 1.238em;
 }
 
 body {
   font-family: "FranklinGothicFS", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  padding-top: 2.5em;
+  padding-top: 2.476em;
   background: url('../images/chalkboard.jpg?1342472802') repeat fixed center;
 }
-@media (min-width: 51em) {
+@media (min-width: 53.813em) {
   body {
     background: url('../images/classroom.jpg?1342470080') no-repeat fixed top left;
   }
@@ -188,17 +188,17 @@ body {
 
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "SquareSerif", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.238em;
   font-weight: bold;
 }
 body p, body ul, body ol {
-  margin-bottom: 1.25em;
+  margin-bottom: 1.238em;
 }
 
 body {
   *zoom: 1;
-  max-width: 29em;
-  _width: 29em;
+  max-width: 19em;
+  _width: 19em;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1em;
@@ -209,10 +209,10 @@ body:after {
   display: table;
   clear: both;
 }
-@media (min-width: 51em) {
+@media (min-width: 53.813em) {
   body {
-    max-width: 49em;
-    _width: 49em;
+    max-width: 39em;
+    _width: 39em;
   }
 }
 body * {
