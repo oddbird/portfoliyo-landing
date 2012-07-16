@@ -175,10 +175,6 @@ body {
 @media (min-width: 53.813em) {
   body {
     background: url('../images/classroom.jpg?1342470080') no-repeat fixed top left;
-  }
-}
-@media (min-width: 1400px), (min-height: 933px) {
-  body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

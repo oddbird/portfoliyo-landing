@@ -14,8 +14,6 @@ body {
   background: image-url('chalkboard.jpg') repeat fixed center;
   @include at-breakpoint($break) {
     @include background(image-url('classroom.jpg') no-repeat fixed top left);
-  }
-  @media (min-width: image-width('classroom.jpg')), (min-height: image-height('classroom.jpg')) {
     @include background-size(cover);
   }
 }
