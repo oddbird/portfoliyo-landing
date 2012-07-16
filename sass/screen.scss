@@ -34,6 +34,13 @@ label { font-weight: bold; }
 body {
   @include container($total-columns, $large);
   @include padding-leader(2);
+  background: image-url('chalkboard.jpg') repeat fixed center;
+  @include at-breakpoint($large) {
+    @include background(image-url('classroom.jpg') no-repeat fixed top left);
+  }
+  @media (min-width: image-width('classroom.jpg')), (min-height: image-height('classroom.jpg')) {
+    @include background-size(cover);
+  }
   * { @include box-sizing(border-box); }
 }
 

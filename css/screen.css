@@ -20,6 +20,7 @@ body {
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 3em;
+  background: url('../images/chalkboard.jpg?1342472802') repeat fixed center;
 }
 body:after {
   content: "";
@@ -30,6 +31,19 @@ body:after {
   body {
     max-width: 49em;
     _width: 49em;
+  }
+}
+@media (min-width: 51em) {
+  body {
+    background: url('../images/classroom.jpg?1342470080') no-repeat fixed top left;
+  }
+}
+@media (min-width: 1400px), (min-height: 933px) {
+  body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 body * {
