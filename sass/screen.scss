@@ -79,14 +79,12 @@ footer, .note {
 .vcard {
   @include clearfix;
   img {
+    @include span-columns(2);
     border: 1px solid;
-    float: left;
-    margin-right: 1em;
   }
   &:nth-child(odd) img {
-    float: right;
-    margin-right: 0;
-    margin-left: 1em;
+    @include omega;
+    margin-left: gutter();
   }
 }
 

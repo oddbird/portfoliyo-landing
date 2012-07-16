@@ -90,12 +90,16 @@ footer, .note {
   *zoom: 1;
 }
 .vcard img {
-  border: 1px solid;
+  width: 31.034%;
   float: left;
-  margin-right: 1em;
+  margin-right: 3.448%;
+  display: inline;
+  border: 1px solid;
 }
 .vcard:nth-child(odd) img {
   float: right;
   margin-right: 0;
-  margin-left: 1em;
+  #margin-left: -1em;
+  display: inline;
+  margin-left: 3.448%;
 }
