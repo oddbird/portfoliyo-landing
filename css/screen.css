@@ -423,11 +423,16 @@ body strong {
 }
 @media (min-width: 39.375em) {
   .team {
-    background: url('../images/noise-trans.png?1342557046') repeat fixed center, -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 43, 54, 0.5)), color-stop(100%, rgba(0, 43, 54, 0)));
-    background: url('../images/noise-trans.png?1342557046') repeat fixed center, -webkit-linear-gradient(left, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
-    background: url('../images/noise-trans.png?1342557046') repeat fixed center, -moz-linear-gradient(left, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
-    background: url('../images/noise-trans.png?1342557046') repeat fixed center, -o-linear-gradient(left, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
-    background: url('../images/noise-trans.png?1342557046') repeat fixed center, linear-gradient(left, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
+    background: url('../images/noise-trans.png?1342557046') repeat fixed center;
+    background: url('../images/space.png?1342561931') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 43, 54, 0.75)), color-stop(100%, rgba(0, 43, 54, 0)));
+    background: url('../images/space.png?1342561931') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, -webkit-linear-gradient(left, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
+    background: url('../images/space.png?1342561931') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, -moz-linear-gradient(left, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
+    background: url('../images/space.png?1342561931') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, -o-linear-gradient(left, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
+    background: url('../images/space.png?1342561931') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, linear-gradient(left, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
+    -webkit-background-size: cover, auto;
+    -moz-background-size: cover, auto;
+    -o-background-size: cover, auto;
+    background-size: cover, auto;
   }
   .team .vcard {
     -webkit-border-radius: 0.31em;
@@ -440,7 +445,10 @@ body strong {
     box-shadow: #002b36 0 0 0.25em;
     margin-right: 25.532%;
     padding: 1.238em;
-    background: rgba(253, 246, 227, 0.5);
+    background: rgba(253, 246, 227, 0.75);
+  }
+  .team .vcard h3 {
+    color: #002b36;
   }
   .team .vcard h3, .team .vcard p {
     width: 65.714%;
