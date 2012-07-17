@@ -30,7 +30,7 @@
         @include span-columns(4 omega,6);
       }
       img { @include span-columns(2,6); }
-      &:nth-child(odd) {
+      &:nth-child(even) {
         h3, p {
           @include remove-omega(6);
           text-align: right;
@@ -64,7 +64,7 @@
       }
       img { @include span-columns(2,6); }
 
-      &:nth-child(odd) {
+      &:nth-child(even) {
         @include squish(2,0);
         h3, p {
           @include span-columns(4,6);
