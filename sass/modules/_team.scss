@@ -41,14 +41,12 @@
   }
 
   @include at-breakpoint($break) {
-    @include background(image-url('noise-trans.png') repeat fixed center);
     @include background(
       image-url('space.png') no-repeat fixed center,
       image-url('stars.png') repeat fixed center,
-      image-url('noise-trans.png') repeat fixed center,
-      linear-gradient(left, rgba($base,.75), rgba($base,0))
+      linear-gradient(right, rgba($base,.75), rgba($base,0))
     );
-    @include background-size(cover, auto, auto, auto);
+    @include background-size(cover, auto, auto);
 
     .vcard {
       @include border-radius(rhythm(.25));
