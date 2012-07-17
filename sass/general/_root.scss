@@ -14,10 +14,6 @@ body {
   @include text-shadow(rgba($alt,.125) 0 1px 0);
   background: $background image-url('noise.png') repeat fixed center;
   color: $base;
-  @include at-breakpoint($break) {
-    @include background($background image-url('classroom.jpg') no-repeat fixed top center);
-    @include background-size(cover);
-  }
 }
 
 $link   : '&:link, &:visited';

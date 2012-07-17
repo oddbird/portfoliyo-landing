@@ -8,6 +8,10 @@
   @include text-shadow(rgba($base,.5) 0 1px 0);
   color: $alt;
   border-color: $base;
+  @include at-breakpoint($break) {
+    @include stretch-x;
+    top: 0;
+  }
 }
 
 [role="contentinfo"] {

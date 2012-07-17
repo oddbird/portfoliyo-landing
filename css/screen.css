@@ -133,15 +133,6 @@ body {
   background: #3c6348 url('../images/noise.png?1342500913') repeat fixed center;
   color: #002b36;
 }
-@media (min-width: 39.375em) {
-  body {
-    background: #3c6348 url('../images/classroom.jpg?1342476933') no-repeat fixed top center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
 
 a:link, a:visited {
   color: #fdf6e3;
@@ -218,6 +209,14 @@ body strong {
   text-shadow: rgba(0, 43, 54, 0.5) 0 1px 0;
   color: #fdf6e3;
   border-color: #002b36;
+}
+@media (min-width: 39.375em) {
+  [role="banner"] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
 }
 
 [role="contentinfo"] p {
@@ -342,9 +341,15 @@ body strong {
 }
 @media (min-width: 39.375em) {
   .signup {
+    padding-top: 6.19em;
     border-bottom-style: solid;
     border-bottom-width: 0.048em;
-    padding-bottom: 1.81em;
+    padding-bottom: 3.667em;
+    background: #3c6348 url('../images/classroom.jpg?1342566540') no-repeat scroll top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     border-color: #002b36;
   }
   .signup h2, .signup .intro, .signup form {

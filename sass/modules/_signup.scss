@@ -76,7 +76,10 @@ $sb-text-color: $base3;
   }
 
   @include at-breakpoint($break) {
-    @include trailing-border(1px,1.5);
+    @include padding-leader(5);
+    @include trailing-border(1px,3);
+    @include background($background image-url('classroom.jpg') no-repeat scroll top center);
+    @include background-size(cover);
     border-color: $base;
 
     h2, .intro, form {
