@@ -7,13 +7,13 @@
     font-weight: bold;
   }
 
-  h2 {
-    @include adjust-font-size-to($medpx);
-    @include trailer;
-  }
-
   p, ul, ol {
-    @include trailer(1,$medpx);
+    @include adjust-font-size-to($smallpx);
+    @include trailer(1,$smallpx);
+    @include at-breakpoint($break) {
+      @include adjust-font-size-to($normpx);
+      @include trailer(1);
+    }
   }
 
   em { font-style: italic; }

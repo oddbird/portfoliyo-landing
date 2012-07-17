@@ -154,13 +154,17 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "SquareSerif", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
-body h2 {
-  font-size: 1.238em;
-  line-height: 1.5em;
-  margin-bottom: 1.238em;
-}
 body p, body ul, body ol {
-  margin-bottom: 1em;
+  font-size: 0.81em;
+  line-height: 1.529em;
+  margin-bottom: 1.529em;
+}
+@media (min-width: 39.375em) {
+  body p, body ul, body ol {
+    font-size: 1em;
+    line-height: 1.238em;
+    margin-bottom: 1.238em;
+  }
 }
 body em {
   font-style: italic;
@@ -169,7 +173,7 @@ body strong {
   font-weight: bold;
 }
 
-body {
+.container, [role="banner"] h1, [role="contentinfo"] {
   *zoom: 1;
   max-width: 35em;
   _width: 35em;
@@ -178,51 +182,73 @@ body {
   padding-left: 1em;
   padding-right: 1em;
 }
-body:after {
+.container:after, [role="banner"] h1:after, [role="contentinfo"]:after {
   content: "";
   display: table;
   clear: both;
 }
 @media (min-width: 39.375em) {
-  body {
+  .container, [role="banner"] h1, [role="contentinfo"] {
     max-width: 47em;
     _width: 47em;
   }
 }
-body * {
+.container *, [role="banner"] h1 *, [role="contentinfo"] * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-footer {
+[role="contentinfo"] {
+  padding-top: 0.31em;
+  padding-bottom: 0.31em;
   clear: both;
 }
 
 [role="banner"] {
+  padding-top: 0.31em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.048em;
+  padding-bottom: 0.262em;
+  background: rgba(0, 43, 54, 0.5) -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 43, 54, 0.5)), color-stop(100%, rgba(0, 43, 54, 0)));
+  background: rgba(0, 43, 54, 0.5) -webkit-linear-gradient(top, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
+  background: rgba(0, 43, 54, 0.5) -moz-linear-gradient(top, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
+  background: rgba(0, 43, 54, 0.5) -o-linear-gradient(top, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
+  background: rgba(0, 43, 54, 0.5) linear-gradient(top, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
   text-shadow: rgba(0, 43, 54, 0.5) 0 1px 0;
-  padding-top: 0.619em;
-  padding-bottom: 0.619em;
-  margin-bottom: 0em;
   color: #fdf6e3;
+  border-color: #002b36;
 }
 
-[role="contentinfo"] {
+[role="contentinfo"] p {
   font-size: 0.667em;
   line-height: 1.857em;
   text-transform: uppercase;
+  margin: 0;
+}
+[role="contentinfo"] strong {
+  white-space: nowrap;
 }
 
 .signup {
-  margin-bottom: 1.238em;
+  padding-top: 0.619em;
 }
 .signup h2 {
-  font-size: 1.952em;
-  line-height: 1.268em;
-  margin-bottom: 0.317em;
+  font-size: 1.238em;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+}
+.signup form {
+  -webkit-box-shadow: #002b36 0 0 0.25em;
+  -moz-box-shadow: #002b36 0 0 0.25em;
+  box-shadow: #002b36 0 0 0.25em;
+  padding: 1.238em 1em;
+  margin: 0 -1em;
+  background: rgba(253, 246, 227, 0.5);
 }
 .signup .formfield {
   text-align: right;
+  margin: 0;
 }
 .signup label {
   text-indent: -119988px;
@@ -316,7 +342,18 @@ footer {
 }
 @media (min-width: 39.375em) {
   .signup {
-    padding-left: 38.298%;
+    border-bottom-style: solid;
+    border-bottom-width: 0.048em;
+    padding-bottom: 1.81em;
+    border-color: #002b36;
+  }
+  .signup h2, .signup .intro, .signup form {
+    margin-left: 38.298%;
+  }
+  .signup h2 {
+    font-size: 1.952em;
+    line-height: 1.268em;
+    margin-bottom: 0.317em;
   }
   .signup form {
     -webkit-border-radius: 0.31em;
@@ -324,32 +361,74 @@ footer {
     -ms-border-radius: 0.31em;
     -o-border-radius: 0.31em;
     border-radius: 0.31em;
-    -webkit-box-shadow: #002b36 0 0 0.25em;
-    -moz-box-shadow: #002b36 0 0 0.25em;
-    box-shadow: #002b36 0 0 0.25em;
-    background: rgba(253, 246, 227, 0.5);
-    padding: 1.238em;
-  }
-  .signup .formfield {
-    margin: 0;
+    margin-right: 0;
   }
 }
 
 .team {
-  margin-bottom: 3.714em;
+  padding-top: 1.238em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.048em;
+  padding-bottom: 1.19em;
+  background: rgba(0, 43, 54, 0.25) -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 43, 54, 0.25)), color-stop(100%, rgba(0, 43, 54, 0)));
+  background: rgba(0, 43, 54, 0.25) -webkit-linear-gradient(top, rgba(0, 43, 54, 0.25), rgba(0, 43, 54, 0));
+  background: rgba(0, 43, 54, 0.25) -moz-linear-gradient(top, rgba(0, 43, 54, 0.25), rgba(0, 43, 54, 0));
+  background: rgba(0, 43, 54, 0.25) -o-linear-gradient(top, rgba(0, 43, 54, 0.25), rgba(0, 43, 54, 0));
+  background: rgba(0, 43, 54, 0.25) linear-gradient(top, rgba(0, 43, 54, 0.25), rgba(0, 43, 54, 0));
+  border-color: #002b36;
 }
-.team h2 {
-  border-top-style: solid;
-  border-top-width: 0.077em;
-  padding-top: 0.048em;
-  margin-bottom: 0.875em;
-  border-color: rgba(0, 43, 54, 0.25);
+.team h3 {
+  text-shadow: rgba(0, 43, 54, 0.5) 0 1px 0;
+  color: rgba(253, 246, 227, 0.75);
+}
+.team img {
+  max-width: 100%;
+  border: 3px solid #002b36;
+}
+.team p {
+  margin: 0;
 }
 .team .vcard {
   margin-bottom: 1.238em;
-  overflow: hidden;
+}
+@media (min-width: 30em) {
+  .team .vcard {
+    overflow: hidden;
+  }
+  .team .vcard h3, .team .vcard p {
+    width: 65.714%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
+  }
+  .team .vcard img {
+    width: 31.429%;
+    float: left;
+    margin-right: 2.857%;
+    display: inline;
+  }
+  .team .vcard:nth-child(odd) h3, .team .vcard:nth-child(odd) p {
+    float: left;
+    margin-right: 2.857%;
+    #margin-left: 0;
+    text-align: right;
+  }
+  .team .vcard:nth-child(odd) img {
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
+  }
 }
 @media (min-width: 39.375em) {
+  .team {
+    background: url('../images/noise-trans.png?1342557046') repeat fixed center, -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 43, 54, 0.5)), color-stop(100%, rgba(0, 43, 54, 0)));
+    background: url('../images/noise-trans.png?1342557046') repeat fixed center, -webkit-linear-gradient(left, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
+    background: url('../images/noise-trans.png?1342557046') repeat fixed center, -moz-linear-gradient(left, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
+    background: url('../images/noise-trans.png?1342557046') repeat fixed center, -o-linear-gradient(left, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
+    background: url('../images/noise-trans.png?1342557046') repeat fixed center, linear-gradient(left, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
+  }
   .team .vcard {
     -webkit-border-radius: 0.31em;
     -moz-border-radius: 0.31em;
@@ -394,8 +473,4 @@ footer {
     #margin-left: -1em;
     display: inline;
   }
-}
-.team img {
-  max-width: 100%;
-  border: 1px solid #002b36;
 }

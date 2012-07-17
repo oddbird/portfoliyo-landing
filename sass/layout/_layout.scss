@@ -1,9 +1,18 @@
 // ---------------------------------------------------------------------------
 // Layout
 
-body {
+.container {
   @include container($total-columns, $break);
   * { @include box-sizing(border-box); }
 }
 
-footer { clear: both; }
+[role="banner"] h1 {
+  @extend .container;
+}
+
+[role="contentinfo"] {
+  @extend .container;
+  @include padding-leader(.25);
+  @include padding-trailer(.25);
+  clear: both;
+}

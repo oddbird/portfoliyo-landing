@@ -25,15 +25,23 @@ $sb-text-color: $base3;
 }
 
 .signup {
-  @include trailer;
+  @include padding-leader(.5);
 
   h2 {
-    @include adjust-font-size-to($largepx);
-    @include trailer(.5,$largepx);
+    @include adjust-font-size-to($medpx);
+    @include trailer(.5,$medpx);
+  }
+
+  form {
+    @include box-shadow($base 0 0 .25em);
+    padding: rhythm(1) $grid-padding;
+    margin: 0 0 - $grid-padding;
+    background: rgba($base3,.5);
   }
 
   .formfield {
     text-align: right;
+    margin: 0;
   }
 
   label {
@@ -68,16 +76,22 @@ $sb-text-color: $base3;
   }
 
   @include at-breakpoint($break) {
-    @include prefix(3);
+    @include trailing-border(1px,1.5);
+    border-color: $base;
+
+    h2, .intro, form {
+      @include pre(3);
+    }
+
+    h2 {
+      @include adjust-font-size-to($largepx);
+      @include trailer(.5,$largepx);
+    }
 
     form {
       @include border-radius(rhythm(.25));
-      @include box-shadow($base 0 0 .25em);
-      background: rgba($base3,.5);
-      padding: rhythm(1);
+      margin-right: 0;
     }
-    .formfield {
-      margin: 0;
-    }
+
   }
 }
