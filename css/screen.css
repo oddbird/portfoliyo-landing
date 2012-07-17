@@ -133,7 +133,7 @@ body {
   background: #3c6348 url('../images/noise.png?1342490745') repeat fixed center;
   color: #002b36;
 }
-@media (min-width: 48.563em) {
+@media (min-width: 39.375em) {
   body {
     background: #3c6348 url('../images/classroom.jpg?1342476933') no-repeat fixed top left;
     -webkit-background-size: cover;
@@ -183,10 +183,10 @@ body:after {
   display: table;
   clear: both;
 }
-@media (min-width: 48.563em) {
+@media (min-width: 39.375em) {
   body {
-    max-width: 35em;
-    _width: 35em;
+    max-width: 47em;
+    _width: 47em;
   }
 }
 body * {
@@ -319,6 +319,26 @@ footer {
   margin-bottom: 0.929em;
   font-style: italic;
 }
+@media (min-width: 39.375em) {
+  .signup {
+    padding-left: 38.298%;
+  }
+  .signup form {
+    -webkit-border-radius: 0.31em;
+    -moz-border-radius: 0.31em;
+    -ms-border-radius: 0.31em;
+    -o-border-radius: 0.31em;
+    border-radius: 0.31em;
+    -webkit-box-shadow: #002b36 0 0 0.25em;
+    -moz-box-shadow: #002b36 0 0 0.25em;
+    box-shadow: #002b36 0 0 0.25em;
+    background: rgba(253, 246, 227, 0.5);
+    padding: 1.238em;
+  }
+  .signup .formfield {
+    margin: 0;
+  }
+}
 
 .team {
   margin-bottom: 3.714em;
@@ -334,13 +354,53 @@ footer {
   margin-bottom: 1.238em;
   overflow: hidden;
 }
+@media (min-width: 39.375em) {
+  .team .vcard {
+    -webkit-border-radius: 0.31em;
+    -moz-border-radius: 0.31em;
+    -ms-border-radius: 0.31em;
+    -o-border-radius: 0.31em;
+    border-radius: 0.31em;
+    -webkit-box-shadow: #002b36 0 0 0.25em;
+    -moz-box-shadow: #002b36 0 0 0.25em;
+    box-shadow: #002b36 0 0 0.25em;
+    margin-right: 25.532%;
+    padding: 1.238em;
+    background: rgba(253, 246, 227, 0.5);
+  }
+  .team .vcard h3, .team .vcard p {
+    width: 65.714%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
+  }
+  .team .vcard img {
+    width: 31.429%;
+    float: left;
+    margin-right: 2.857%;
+    display: inline;
+  }
+  .team .vcard:nth-child(odd) {
+    margin-left: 25.532%;
+    margin-right: 0%;
+  }
+  .team .vcard:nth-child(odd) h3, .team .vcard:nth-child(odd) p {
+    width: 65.714%;
+    float: left;
+    margin-right: 2.857%;
+    display: inline;
+    text-align: right;
+  }
+  .team .vcard:nth-child(odd) img {
+    width: 31.429%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
+  }
+}
 .team img {
   max-width: 100%;
   border: 1px solid #002b36;
-}
-@media all and (min-width: 30em) {
-  .team img {
-    float: left;
-    margin-right: 2.857%;
-  }
 }

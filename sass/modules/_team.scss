@@ -13,15 +13,32 @@
   .vcard {
     @include trailer;
     overflow: hidden;
+
+    @include at-breakpoint($break) {
+      @include border-radius(rhythm(.25));
+      @include box-shadow($base 0 0 .25em);
+      @include post(2);
+      padding: rhythm(1);
+      background: rgba($base3,.5);
+
+      h3, p {
+        @include span-columns(4 omega,6);
+      }
+      img { @include span-columns(2,6); }
+
+      &:nth-child(odd) {
+        @include squish(2,0);
+        h3, p {
+          @include span-columns(4,6);
+          text-align: right;
+        }
+        img { @include span-columns(2 omega,6); }
+      }
+    }
   }
 
   img {
     max-width: 100%;
     border: 1px solid $base;
-    @media all and (min-width: 30em) {
-      float: left;
-      margin-right: gutter();
-    }
   }
-
 }
