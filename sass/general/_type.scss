@@ -4,10 +4,18 @@
 %type {
   h1, h2, h3, h4, h5, h6 {
     @include serif;
-    @include trailer;
     font-weight: bold;
   }
-  p, ul, ol {
+
+  h2 {
+    @include adjust-font-size-to($medpx);
     @include trailer;
   }
+
+  p, ul, ol {
+    @include trailer(1,$medpx);
+  }
+
+  em { font-style: italic; }
+  strong { font-weight: bold; }
 }

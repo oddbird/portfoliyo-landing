@@ -1,0 +1,27 @@
+// ---------------------------------------------------------------------------
+// Team
+
+.team {
+  @include trailer(3);
+
+  h2 {
+    @include leading-border(2px,.125,$medpx);
+    @include trailer(.875,$medpx);
+    border-color: rgba($base,.25);
+  }
+
+  .vcard {
+    @include trailer;
+    overflow: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    border: 1px solid $base;
+    @media all and (min-width: 30em) {
+      float: left;
+      margin-right: gutter();
+    }
+  }
+
+}

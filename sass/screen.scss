@@ -1,5 +1,5 @@
 // ---------------------------------------------------------------------------
-// IMPORTS
+// Imports
 
 @import "compass";
 @import "compass/reset";
@@ -9,6 +9,6 @@
 @import "general/root";
 @import "layout/layout";
 
-body {
-  @extend %type;
-}
+@import "modules/banner";
+@import "modules/signup";
+@import "modules/team";

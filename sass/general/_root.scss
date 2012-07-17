@@ -9,13 +9,23 @@
 @include establish-baseline;
 
 body {
+  @extend %type;
   @include sans;
-  @include padding-leader(2);
-  background: image-url('chalkboard.jpg') repeat fixed center;
+  @include text-shadow(rgba($alt,.125) 0 1px 0);
+  background: $background image-url('noise.png') repeat fixed center;
+  color: $base;
   @include at-breakpoint($break) {
-    @include background(image-url('classroom.jpg') no-repeat fixed top left);
+    @include background($background image-url('classroom.jpg') no-repeat fixed top left);
     @include background-size(cover);
   }
+}
+
+$link   : '&:link, &:visited';
+$focus  : '&:hover, &:active, &:focus';
+
+a {
+  #{$link} { color: $alt; }
+  #{$focus} { color: $accent; }
 }
 
 // ---------------------------------------------------------------------------

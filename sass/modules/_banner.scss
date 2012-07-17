@@ -1,0 +1,15 @@
+// ---------------------------------------------------------------------------
+// Banner
+
+[role="banner"] {
+  @include text-shadow(rgba($base,.5) 0 1px 0);
+  @include padding-leader(.5);
+  @include padding-trailer(.5);
+  @include trailer(0);
+  color: $alt;
+}
+
+[role="contentinfo"] {
+  @include adjust-font-size-to($xsmallpx);
+  text-transform: uppercase;
+}

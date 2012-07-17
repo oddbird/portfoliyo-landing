@@ -1,0 +1,71 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "sassy-buttons";
+
+$sb-base-color: rgba($base02,.75);
+$sb-text-color: $base3;
+
+// ---------------------------------------------------------------------------
+// Signup
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content }
+  &:-moz-placeholder{
+    @content }
+  &.placeholder{
+    @content }
+}
+
+@mixin apply-placeholder {
+  @include placeholder {
+    color: rgba($base02,.5);
+    font-style: italic;
+  }
+}
+
+.signup {
+  @include trailer;
+
+  h2 {
+    @include adjust-font-size-to($largepx);
+    @include trailer(.5,$largepx);
+  }
+
+  h3 { @include trailer(0); }
+
+  .formfield {
+    text-align: right;
+  }
+
+  label {
+    @include hide-text;
+    display: inline-block;
+    position: absolute;
+  }
+
+  input {
+    @include border-radius(3em);
+    @include box-shadow($base 0 0 .25em);
+    @include adjust-font-size-to($smallpx,1.5);
+    @include rhythm-borders(1px,.25,$smallpx);
+    @include trailer(.5,$smallpx);
+    @include apply-placeholder;
+    width: 100%;
+    padding-left: 1em;
+    background: $base3;
+    color: $base02;
+    border-color: $base;
+  }
+
+  button {
+    @include sassy-button;
+  }
+
+  .note {
+    @include adjust-font-size-to($xsmallpx,.75);
+    @include trailer(.5,$xsmallpx);
+    font-style: italic;
+  }
+}
