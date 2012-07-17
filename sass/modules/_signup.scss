@@ -21,7 +21,6 @@ $sb-text-color: $base3;
 @mixin apply-placeholder {
   @include placeholder {
     color: rgba($base02,.5);
-    font-style: italic;
   }
 }
 
@@ -32,8 +31,6 @@ $sb-text-color: $base3;
     @include adjust-font-size-to($largepx);
     @include trailer(.5,$largepx);
   }
-
-  h3 { @include trailer(0); }
 
   .formfield {
     text-align: right;
@@ -47,10 +44,9 @@ $sb-text-color: $base3;
 
   input {
     @include border-radius(3em);
-    @include box-shadow($base 0 0 .25em);
+    @include box-shadow($base 0 0 .125em inset);
     @include adjust-font-size-to($smallpx,1.5);
     @include rhythm-borders(1px,.25,$smallpx);
-    @include trailer(.5,$smallpx);
     @include apply-placeholder;
     width: 100%;
     padding-left: 1em;
@@ -61,12 +57,14 @@ $sb-text-color: $base3;
 
   button {
     @include sassy-button;
+    text-transform: capitalize;
   }
 
   .note {
     @include adjust-font-size-to($xsmallpx,.75);
-    @include trailer(.5,$xsmallpx);
-    font-style: italic;
+    @include trailer(.5,$smallpx);
+    display: block;
+    color: $base01;
   }
 
   @include at-breakpoint($break) {

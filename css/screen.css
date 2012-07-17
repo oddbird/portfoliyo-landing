@@ -130,7 +130,7 @@ html {
 body {
   font-family: "CambridgeRound", "Helvetica Neue", Arial, Helvetica, sans-serif;
   text-shadow: rgba(253, 246, 227, 0.125) 0 1px 0;
-  background: #3c6348 url('../images/noise.png?1342490745') repeat fixed center;
+  background: #3c6348 url('../images/noise.png?1342500913') repeat fixed center;
   color: #002b36;
 }
 @media (min-width: 39.375em) {
@@ -221,9 +221,6 @@ footer {
   line-height: 1.268em;
   margin-bottom: 0.317em;
 }
-.signup h3 {
-  margin-bottom: 0em;
-}
 .signup .formfield {
   text-align: right;
 }
@@ -240,15 +237,14 @@ footer {
   -ms-border-radius: 3em;
   -o-border-radius: 3em;
   border-radius: 3em;
-  -webkit-box-shadow: #002b36 0 0 0.25em;
-  -moz-box-shadow: #002b36 0 0 0.25em;
-  box-shadow: #002b36 0 0 0.25em;
+  -webkit-box-shadow: #002b36 0 0 0.125em inset;
+  -moz-box-shadow: #002b36 0 0 0.125em inset;
+  box-shadow: #002b36 0 0 0.125em inset;
   font-size: 0.81em;
   line-height: 2.294em;
   border-style: solid;
   border-width: 0.059em;
   padding: 0.324em;
-  margin-bottom: 0.765em;
   width: 100%;
   padding-left: 1em;
   background: #fdf6e3;
@@ -257,15 +253,12 @@ footer {
 }
 .signup input::-webkit-input-placeholder {
   color: rgba(7, 54, 66, 0.5);
-  font-style: italic;
 }
 .signup input:-moz-placeholder {
   color: rgba(7, 54, 66, 0.5);
-  font-style: italic;
 }
 .signup input.placeholder {
   color: rgba(7, 54, 66, 0.5);
-  font-style: italic;
 }
 .signup button {
   font-size: 16px;
@@ -291,6 +284,7 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.75);
   color: #fdf6e3;
   text-shadow: rgba(0, 0, 0, 0.75) 0 -1px 0;
+  text-transform: capitalize;
 }
 .signup button:hover {
   background-color: rgba(0, 0, 0, 0.75);
@@ -316,8 +310,9 @@ footer {
 .signup .note {
   font-size: 0.667em;
   line-height: 1.393em;
-  margin-bottom: 0.929em;
-  font-style: italic;
+  margin-bottom: 0.765em;
+  display: block;
+  color: #586e75;
 }
 @media (min-width: 39.375em) {
   .signup {
