@@ -135,7 +135,7 @@ body {
 }
 @media (min-width: 39.375em) {
   body {
-    background: #3c6348 url('../images/classroom.jpg?1342476933') no-repeat fixed top left;
+    background: #3c6348 url('../images/classroom.jpg?1342476933') no-repeat fixed top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
