@@ -48,7 +48,7 @@
       image-url('noise-trans.png') repeat fixed center,
       linear-gradient(left, rgba($base,.75), rgba($base,0))
     );
-    @include background-size(cover, auto);
+    @include background-size(cover, auto, auto, auto);
 
     .vcard {
       @include border-radius(rhythm(.25));

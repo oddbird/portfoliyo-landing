@@ -424,15 +424,15 @@ body strong {
 @media (min-width: 39.375em) {
   .team {
     background: url('../images/noise-trans.png?1342557046') repeat fixed center;
-    background: url('../images/space.png?1342561931') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 43, 54, 0.75)), color-stop(100%, rgba(0, 43, 54, 0)));
-    background: url('../images/space.png?1342561931') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, -webkit-linear-gradient(left, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
-    background: url('../images/space.png?1342561931') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, -moz-linear-gradient(left, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
-    background: url('../images/space.png?1342561931') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, -o-linear-gradient(left, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
-    background: url('../images/space.png?1342561931') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, linear-gradient(left, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
-    -webkit-background-size: cover, auto;
-    -moz-background-size: cover, auto;
-    -o-background-size: cover, auto;
-    background-size: cover, auto;
+    background: url('../images/space.png?1342562929') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 43, 54, 0.75)), color-stop(100%, rgba(0, 43, 54, 0)));
+    background: url('../images/space.png?1342562929') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, -webkit-linear-gradient(left, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
+    background: url('../images/space.png?1342562929') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, -moz-linear-gradient(left, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
+    background: url('../images/space.png?1342562929') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, -o-linear-gradient(left, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
+    background: url('../images/space.png?1342562929') no-repeat fixed center, url('../images/stars.png?1342560744') repeat fixed center, url('../images/noise-trans.png?1342557046') repeat fixed center, linear-gradient(left, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
+    -webkit-background-size: cover, auto, auto, auto;
+    -moz-background-size: cover, auto, auto, auto;
+    -o-background-size: cover, auto, auto, auto;
+    background-size: cover, auto, auto, auto;
   }
   .team .vcard {
     -webkit-border-radius: 0.31em;
