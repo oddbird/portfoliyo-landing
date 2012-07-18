@@ -4,6 +4,7 @@
 .team {
   @include padding-leader(1);
   @include trailing-border(1px,1);
+  @include background(rgba($base,.25));
   @include background(rgba($base,.25) linear-gradient(top, rgba($base,.25), rgba($base,0)));
   border-color: $base;
 
@@ -41,9 +42,9 @@
   }
 
   @include at-breakpoint($break) {
+    @include background(rgba($base,.5) image-url('space.png') no-repeat fixed center);
     @include background(
       image-url('space.png') no-repeat fixed center,
-      image-url('stars.png') repeat fixed center,
       linear-gradient(right, rgba($base,.75), rgba($base,0))
     );
     @include background-size(cover, auto, auto);

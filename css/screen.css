@@ -376,6 +376,7 @@ body strong {
   border-bottom-style: solid;
   border-bottom-width: 0.048em;
   padding-bottom: 1.19em;
+  background: rgba(0, 43, 54, 0.25);
   background: rgba(0, 43, 54, 0.25) -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 43, 54, 0.25)), color-stop(100%, rgba(0, 43, 54, 0)));
   background: rgba(0, 43, 54, 0.25) -webkit-linear-gradient(top, rgba(0, 43, 54, 0.25), rgba(0, 43, 54, 0));
   background: rgba(0, 43, 54, 0.25) -moz-linear-gradient(top, rgba(0, 43, 54, 0.25), rgba(0, 43, 54, 0));
@@ -429,11 +430,12 @@ body strong {
 }
 @media (min-width: 39.375em) {
   .team {
-    background: url('../images/space.png?1342563945') no-repeat fixed center, url('../images/stars.png?1342563945') repeat fixed center, -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, rgba(0, 43, 54, 0.75)), color-stop(100%, rgba(0, 43, 54, 0)));
-    background: url('../images/space.png?1342563945') no-repeat fixed center, url('../images/stars.png?1342563945') repeat fixed center, -webkit-linear-gradient(right, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
-    background: url('../images/space.png?1342563945') no-repeat fixed center, url('../images/stars.png?1342563945') repeat fixed center, -moz-linear-gradient(right, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
-    background: url('../images/space.png?1342563945') no-repeat fixed center, url('../images/stars.png?1342563945') repeat fixed center, -o-linear-gradient(right, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
-    background: url('../images/space.png?1342563945') no-repeat fixed center, url('../images/stars.png?1342563945') repeat fixed center, linear-gradient(right, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
+    background: rgba(0, 43, 54, 0.5) url('../images/space.png?1342631867') no-repeat fixed center;
+    background: url('../images/space.png?1342631867') no-repeat fixed center, -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, rgba(0, 43, 54, 0.75)), color-stop(100%, rgba(0, 43, 54, 0)));
+    background: url('../images/space.png?1342631867') no-repeat fixed center, -webkit-linear-gradient(right, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
+    background: url('../images/space.png?1342631867') no-repeat fixed center, -moz-linear-gradient(right, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
+    background: url('../images/space.png?1342631867') no-repeat fixed center, -o-linear-gradient(right, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
+    background: url('../images/space.png?1342631867') no-repeat fixed center, linear-gradient(right, rgba(0, 43, 54, 0.75), rgba(0, 43, 54, 0));
     -webkit-background-size: cover, auto, auto;
     -moz-background-size: cover, auto, auto;
     -o-background-size: cover, auto, auto;
