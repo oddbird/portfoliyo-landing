@@ -130,7 +130,7 @@ html {
 body {
   font-family: "CambridgeRound", "Helvetica Neue", Arial, Helvetica, sans-serif;
   text-shadow: rgba(253, 246, 227, 0.125) 0 1px 0;
-  background: #657b83 url('../images/noise.png?1341997855') repeat fixed center;
+  background: #657b83 url('../images/noise.png?1342568481') repeat fixed center;
   color: #002b36;
 }
 
@@ -201,6 +201,7 @@ body strong {
   border-bottom-style: solid;
   border-bottom-width: 0.048em;
   padding-bottom: 0.262em;
+  background: rgba(0, 43, 54, 0.5);
   background: rgba(0, 43, 54, 0.5) -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 43, 54, 0.5)), color-stop(100%, rgba(0, 43, 54, 0)));
   background: rgba(0, 43, 54, 0.5) -webkit-linear-gradient(top, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
   background: rgba(0, 43, 54, 0.5) -moz-linear-gradient(top, rgba(0, 43, 54, 0.5), rgba(0, 43, 54, 0));
@@ -345,7 +346,7 @@ body strong {
     border-bottom-style: solid;
     border-bottom-width: 0.048em;
     padding-bottom: 3.667em;
-    background: #3c6348 url('../images/classroom2.jpg?1342567664') no-repeat scroll top center;
+    background: #3c6348 url('../images/classroom2.jpg?1342568481') no-repeat scroll top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
